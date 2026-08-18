@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom branding palette */
+  --color-ketchup: #E23636;
+  --color-mustard: #F2C94C;
+  --color-mayo: #fafafa;
+  --color-ketchup-hover: #b81e1e;
+  --color-mustard-hover: #e0b020;
+}
+
+/* Custom global overrides */
+body {
+  font-family: var(--font-sans);
+  background-color: #090909;
+  color: #f4f4f5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+/* Glassmorphism styling helpers */
+.glass-panel {
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(20, 20, 20, 0.85);
+  border-color: rgba(226, 54, 54, 0.25); /* Subtle ketchup border on hover */
+  box-shadow: 0 12px 30px -10px rgba(226, 54, 54, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Custom scrollbar styling for a high-quality interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E23636;
+}

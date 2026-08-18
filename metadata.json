@@ -1,0 +1,6 @@
+{
+  "name": "Taquería Gourmet",
+  "description": "Tienda premium de tacos gourmet con carnes marinadas, tortillas de maíz nixtamalizado, más de 30 salsas artesanales y seguimiento de pedidos en tiempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
